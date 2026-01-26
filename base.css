@@ -69,6 +69,25 @@ hero1{
      
 
 }
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  
+}
+
+.policy-content h2 {
+  border-left: 4px solid #0d6efd;
+  padding-left: 12px;
+}
+
+.policy-content p,
+.policy-content li {
+  line-height: 1.8;
+}
+
 
 
 .page-heading {
