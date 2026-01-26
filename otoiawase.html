@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - AnimeHub</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+ 
+    <link rel="icon" href="favicon.png">
+    
+</head>
+<body>
+      <!-- ナビゲーションバー -->
+    <nav id="" class="navbar navbar-expand-lg navbar-dark col-12 sticky-top" 
+   >
+        <div class="container sticky-top">
+            <a class="navbar-brand fw-bold " href="index.html" >
+                <i class="bi bi-film"></i> AniListo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav" >
+                <ul class="navbar-nav ms-auto" style="padding-left:00px;">
+                    <li class="nav-item" >
+                        <a class="nav-link" href="index.html">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="anime-list.html">作品一覧</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="anime-ranking.html">ランキング</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="anime-mylist.html">マイリスト</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">コミュニティ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-lg-none" href="anime-login.html">ログイン</a>
+                    </li>
+                </ul>
+                <a href="anime-login.html" class="btn btn-light ms-3 d-none d-lg-block">
+                    <i class="bi bi-person-circle"></i> ログイン</a>
+            </div>
+        </div>
+    </nav>
+     <div class="container mt-4">
+         <h2 class="mb-3">お問い合わせフォーム</h2>
+        <form action="#" style="max-width: 700px;">
+            <div class="mb-3">
+                <label for="name" class="form-label">お名前</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="mb-3 border-bottom">
+                <label for="namef" class="form-label">お名前(フリガナ)</label>
+                <input type="text" class="form-control" id="namef" name="namef">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">メールアドレス</label>
+                <input type="email" class="form-control" id="email" name="email">
+
+            </div>
+            <div class="mb-3 border-bottom">
+                <label for="emailk" class="form-label">メールアドレス(確認用)</label>
+                <input type="email" class="form-control" id="emailk" name="emailk">
+                
+            </div>
+            <div clasS="mb-3 border-bottom">
+                <lavel clasS="form-label">性別</lavel>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="contact" value="man" id="radioman" checked>
+                    <label for="radioman" class="form-check-label">男性</label>
+                </div>
+                <div clasS="form-check">
+                    <input type="radio" class="form-check-input" name="contact" value="wman" id="radiowman">
+                    <label for="radiowman" class="form-check-label">女性</label>
+                </div>
+                 <div clasS="form-check">
+                    <input type="radio" class="form-check-input" name="contact" value="chat" id="radioChat">
+                    <label for="radioChat" class="form-check-label">秘密</label>
+                </div>
+            </div>
+            <div class="mb-3 border-bottom">
+                <label for="son" class="form-label">年齢</label>
+                <div class="d-flex ">
+                    <input type="number" class="form-control" id="son" name="son" style="width:80px;">
+                <span>歳</span>
+                </div>
+                
+            </div>
+           
+            <div class="mb-3 border-bottom">
+                <label for="">お問い合わせ内容</label>
+                <textarea  cols="100" rows="10" placeholder="初期値を指定します、記入例などで使用されることが多いです。" ></textarea>
+            </div>
+            <div class="mb-3">
+               <a href="index.html" class="btn btn-primary ms-3">
+                送信する
+                </a>
+            </div>
+            
+        </form>
+    </div>
+     <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> AnimeHub</h5>
+                    <p class="text-light">あなたの好きなアニメを見つけて、共有しよう。</p>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="fw-bold mb-3">サイト情報</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="kiyaku.html" class="text-light text-decoration-none">利用規約</a></li>
+                        <li><a href="puraibasi-.html" class="text-light text-decoration-none">プライバシー</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="fw-bold mb-3">サポート</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">ヘルプ</a></li>
+                        <li><a href="otoiawase.html" class="text-light text-decoration-none">お問い合わせ</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold mb-3">フォローする</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-discord fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="text-center text-light mb-0">&copy; 2025 AnimeHub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+ 
+</html>

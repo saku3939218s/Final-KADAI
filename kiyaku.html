@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新規登録 - AnimeHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+ 
+    <link rel="icon" href="favicon.png">
+    
+</head>
+
+<body>
+      <!-- ナビゲーションバー -->
+    <nav id="" class="navbar navbar-expand-lg navbar-dark col-12 sticky-top" 
+   >
+        <div class="container sticky-top">
+            <a class="navbar-brand fw-bold " href="index.html" >
+                <i class="bi bi-film"></i> AniListo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav" >
+                <ul class="navbar-nav ms-auto" style="padding-left:00px;">
+                    <li class="nav-item" >
+                        <a class="nav-link" href="index.html">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="anime-list.html">作品一覧</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="anime-ranking.html">ランキング</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="anime-mylist.html">マイリスト</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">コミュニティ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-lg-none" href="anime-login.html">ログイン</a>
+                    </li>
+                </ul>
+                <a href="anime-login.html" class="btn btn-light ms-3 d-none d-lg-block">
+                    <i class="bi bi-person-circle"></i> ログイン</a>
+            </div>
+        </div>
+    </nav>
+  
+    <div class="container mt-5">
+        <h1>利用規約</h1>
+
+この利用規約（以下、「本規約」といいます。）は、本サービスの提供条件および運営者と利用者との間の権利義務関係を定めるものです。<br>
+利用者は、本規約に同意の上、本サービスを利用するものとします。<br>
+
+---<br>
+<h2>## 第1条（適用）</h2>
+
+
+本規約は、利用者と運営者との間の本サービスの利用に関わる一切の関係に適用されます。<br>
+
+---<br>
+<h2>## 第2条（利用登録）</h2>
+
+
+利用者は、本サービスの利用にあたり、正確かつ最新の情報を登録するものとします。<br>
+
+---<br>
+<h2>## 第3条（禁止事項）</h2>
+
+
+利用者は、以下の行為をしてはなりません。<br>
+
+* 法令または公序良俗に違反する行為<br>
+* 他の利用者または第三者の権利・利益を侵害する行為<br>
+* 本サービスの運営を妨害する行為<br>
+* 不正アクセス、またはこれを試みる行為<br>
+* 虚偽の情報を登録する行為<br>
+* その他、運営者が不適切と判断する行為<br>
+
+---<br>
+<h2>## 第4条（サービスの提供・変更・停止</h2>
+）
+
+運営者は、事前の通知なく、本サービスの内容を変更、追加、または停止することができるものとします。<br>
+
+---<br>
+<h2>## 第5条（免責事項）</h2>
+
+
+運営者は、本サービスの利用により利用者に生じた損害について、一切の責任を負わないものとします。ただし、法令により免責が認められない場合はこの限りではありません。<br>
+
+---<br>
+<h2>## 第6条（著作権）</h2>
+
+
+本サービス内のコンテンツに関する著作権は、運営者または正当な権利者に帰属します。無断での転載・複製を禁止します。<br>
+
+---<br>
+<h2>## 第7条（利用規約の変更）</h2>
+
+
+運営者は、必要と判断した場合には、利用者に通知することなく本規約を変更できるものとします。<br>
+
+---<br>
+<h2>## 第8条（準拠法・管轄）</h2>
+
+
+本規約の解釈には日本法を準拠法とし、本サービスに関して紛争が生じた場合には、運営者の所在地を管轄する裁判所を専属的合意管轄とします。<br>
+
+---<br>
+<div style="text-align: center;">
+   <button class="btn btn-primary"
+ onclick="location.href='anime-signup.html?agreed=true'">
+利用規約に同意する</button>
+    
+</div>
+
+
+    </div>
+   
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('signupForm');
+            const submitBtn = document.getElementById('submitBtn');
+
+            const username = document.getElementById('username');
+            const email = document.getElementById('email');
+            const password = document.getElementById('password');
+            const confirmPassword = document.getElementById('confirmPassword');
+            const birthdate = document.getElementById('birthdate');
+            const agreeTerms = document.getElementById('agreeTerms');
+
+            // パスワード強度チェック
+            document.getElementById('password').addEventListener('input', function () {
+                const password = this.value;
+                const strengthBar = document.getElementById('strengthBar');
+                const strengthText = document.getElementById('strengthText');
+
+                let strength = 0;
+                if (password.length >= 8) strength++;
+                if (password.match(/[a-z]/) && password.match(/[A-Z]/)) strength++;
+                if (password.match(/[0-9]/)) strength++;
+                if (password.match(/[^a-zA-Z0-9]/)) strength++;
+
+                strengthBar.className = 'password-strength-bar';
+                strengthBar.style.width = '0%';
+
+                if (password.length === 0) {
+                    strengthText.textContent = '8文字以上推奨';
+                    strengthText.style.color = '#6b7280';
+                } else if (strength <= 1) {
+                    strengthBar.classList.add('strength-weak');
+                    strengthBar.style.width = '33%';
+                    strengthText.textContent = '弱い';
+                    strengthText.style.color = '#ef4444';
+                } else if (strength <= 2) {
+                    strengthBar.classList.add('strength-medium');
+                    strengthBar.style.width = '66%';
+                    strengthText.textContent = '普通';
+                    strengthText.style.color = '#f59e0b';
+                } else {
+                    strengthBar.classList.add('strength-strong');
+                    strengthBar.style.width = '100%';
+                    strengthText.textContent = '強い';
+                    strengthText.style.color = '#10b981';
+                }
+            });
+
+            function validate() {
+                let valid = true;
+
+                // ユーザー名
+                if (username.value.trim().length < 4) {
+                    document.getElementById('usernameError').classList.remove('d-none');
+                    valid = false;
+                } else {
+                    document.getElementById('usernameError').classList.add('d-none');
+                }
+
+                // メール
+                if (!email.value.match(/^[^@]+@[^@]+\.[^@]+$/)) {
+                    document.getElementById('emailError').classList.remove('d-none');
+                    valid = false;
+                } else {
+                    document.getElementById('emailError').classList.add('d-none');
+                }
+
+                // パスワード
+                if (password.value.length < 8) {
+                    document.getElementById('passwordError').classList.remove('d-none');
+                    valid = false;
+                } else {
+                    document.getElementById('passwordError').classList.add('d-none');
+                }
+
+                // パスワード確認
+                if (password.value !== confirmPassword.value || confirmPassword.value === "") {
+                    document.getElementById('confirmPasswordError').classList.remove('d-none');
+                    valid = false;
+                } else {
+                    document.getElementById('confirmPasswordError').classList.add('d-none');
+                }
+
+                // 年齢チェック
+                if (birthdate.value) {
+                    const birthDate = new Date(birthdate.value);
+                    const today = new Date();
+                    let age = today.getFullYear() - birthDate.getFullYear();
+                    const monthDiff = today.getMonth() - birthDate.getMonth();
+                    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+                        age--;
+                    }
+                    if (age < 13) {
+                        document.getElementById('birthdateError').classList.remove('d-none');
+                        valid = false;
+                    } else {
+                        document.getElementById('birthdateError').classList.add('d-none');
+                    }
+                } else {
+                    document.getElementById('birthdateError').classList.remove('d-none');
+                    valid = false;
+                }
+
+                // 利用規約
+                if (!agreeTerms.checked) {
+                    document.getElementById('termsError').classList.remove('d-none');
+                    valid = false;
+                } else {
+                    document.getElementById('termsError').classList.add('d-none');
+                }
+
+                // ボタン制御
+                submitBtn.disabled = !valid;
+            }
+
+            // 入力イベント監視
+            [username, email, password, confirmPassword, birthdate, agreeTerms].forEach(field => {
+                field.addEventListener('input', validate);
+                field.addEventListener('change', validate);
+            });
+
+            // 初期チェック
+            validate();
+
+            // 送信時
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                if (!submitBtn.disabled) {
+                    // 成功通知
+                    const toast = new bootstrap.Toast(document.getElementById('successToast'));
+                    document.getElementById('toastMessage').textContent = 'アカウントが作成されました！メールを確認してください。';
+                    toast.show();
+                    form.reset();
+                    validate();
+
+                    // 2秒後にログインページへリダイレクト
+                    setTimeout(() => {
+                        window.location.href = 'anime-login.html';
+                    }, 2000);
+                }
+            });
+        });
+    </script>
+
+     <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> AnimeHub</h5>
+                    <p class="text-light">あなたの好きなアニメを見つけて、共有しよう。</p>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="fw-bold mb-3">サイト情報</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="kiyaku.html" class="text-light text-decoration-none">利用規約</a></li>
+                        <li><a href="puraibasi-.html" class="text-light text-decoration-none">プライバシー</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h6 class="fw-bold mb-3">サポート</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">ヘルプ</a></li>
+                        <li><a href="otoiawase.html" class="text-light text-decoration-none">お問い合わせ</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold mb-3">フォローする</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-discord fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="text-center text-light mb-0">&copy; 2025 AnimeHub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

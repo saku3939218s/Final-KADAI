@@ -41,8 +41,8 @@
 
 <body>
     <!-- ナビゲーションバー -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark col-12 sticky-top">
+        <div class="container sticky-top">
             <a class="navbar-brand fw-bold" href="index.html">
                 <i class="bi bi-film"></i> AniListo
             </a>
@@ -262,10 +262,13 @@
                             title="人気順">
                             <i class="bi bi-sort-down"></i> <span class="d-none d-sm-inline">人気順</span>
                         </button>
-                        <button type="button" class="btn btn-outline-dark sort-btn" data-sort="rating" title="評価順">
+                        <button type="button" class
+                        = "btn btn-outline-dark sort-btn " data-sort="rating" 
+                        title="評価順" data-bs-target="#content2">
                             <i class="bi bi-star-fill"></i> <span class="d-none d-sm-inline">評価順</span>
                         </button>
-                        <button type="button" class="btn btn-outline-dark sort-btn" data-sort="new" title="新着順">
+                        <button type="button" class="btn btn-outline-dark sort-btn" data-sort="new" 
+                        title="新着順">
                             <i class="bi bi-calendar"></i> <span class="d-none d-sm-inline">新着順</span>
                         </button>
                     </div>
@@ -275,15 +278,17 @@
                 <div class="row g-4 mb-4" id="contentDisplay">
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card position-relative">
-                            <img src="images/異世界の勇者 ～運命の旅路～.webp" class="card-img-top" alt="異世界の勇者">
+                            <img src="images/images.jpg" class="card-img-top" alt="異世界の勇者">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-primary">ファンタジー</span>
+                                    <span class="badge bg-primary">バトル</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">異世界の勇者 ～運命の旅路～</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">DRAGON BALL</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    異世界に勇者として召喚された高校生・佐藤翔太が、仲間との絆を力に魔王軍や陰謀へ挑む。成長と感動が交錯する、胸躍る王道ファンタジー冒険譚。</p>
+                                    山奥で暮らす少年・孫悟空は、不思議な力を持つドラゴンボールを探す少女ブルマと出会う。
+仲間やライバルたちと冒険や修行を重ね、次々と現れる強敵に立ち向かっていく。
+戦いの中で悟空は限界を超えて成長し、地球や宇宙を救う存在となっていく。</p>
                                 <a href="anime-detail.html" class="stretched-link"></a>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
@@ -302,15 +307,18 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/桜色の約束.webp" class="card-img-top" alt="桜色の約束">
+                            <img src="images/yumebatoru.jpg" class="card-img-top" alt="桜色の約束">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
                                     <span class="badge bg-danger">恋愛</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">桜色の約束</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">チェンソーマン</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    高校最後の春。幼馴染との小さな“約束”を胸に、揺れる想いと未来への一歩を描く、切なくも温かい青春ラブストーリー。</p>
+                                    悪魔が存在する世界。
+                                    極貧生活を送る少年・デンジは、
+                                    悪魔ポチタと契約し、
+                                    “チェンソーマン”として悪魔を狩る側になる。</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -328,15 +336,18 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/量子戦士クロノス.webp" class="card-img-top" alt="量子戦士">
+                            <img src="images/wannpi-su.jpg" class="card-img-top" alt="量子戦士">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-info">SF</span>
+                                    <span class="badge bg-info">バトル</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">量子戦士クロノス</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">ONE PIECE</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    時空のゆがみに巻き込まれた少年が“量子戦士”として覚醒。過去と未来を駆け巡り、崩壊する世界を救うため仲間と共に戦い抜く、スケール壮大なSFアクション。</p>
+                                    海賊が夢と自由を追う世界。
+                                    伝説の海賊王ゴールド・ロジャーが遺した
+                                    **「ひとつなぎの大秘宝（ワンピース）」**を巡って、
+                                    時代は大海賊時代に突入する。</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -354,15 +365,18 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/魔法学園の日常.webp" class="card-img-top" alt="魔法学園">
+                            <img src="images/suketto.jpg" class="card-img-top" alt="魔法学園">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-primary">ファンタジー</span>
+                                    <span class="badge bg-primary">学園</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">魔法学園の日常</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">SKET DANCE</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    魔法学園に通う個性豊かな生徒たちが、授業や試験、友情や恋に揺れながら日々成長していく。笑いとときめきがあふれる、魔法世界の青春ファンタジー。</p>
+                                    学園の「何でも屋」部活・スケット団の話。
+                                    困ってる生徒を全力で助ける…が、
+                                    基本はギャグ、たまに泣かせに来る。
+                                    笑わせて油断させてから感情を殴ってくる名作。</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -380,15 +394,17 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/竜騎士の伝説.webp" class="card-img-top" alt="竜騎士">
+                            <img src="images/NARUTO.jpg" class="card-img-top" alt="竜騎士">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-primary">ファンタジー</span>
+                                    <span class="badge bg-primary">忍者</span>
                                     <span class="badge bg-warning text-dark">人気</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">竜騎士の伝説</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">NARUTO</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    竜と契約した若き騎士が、仲間と共に迫りくる脅威と古代の謎に立ち向かう。絆と勇気が導く、壮大な冒険と伝説が紡がれるファンタジー物語。</p>
+                                    忍者の世界。
+                                    里から忌み嫌われて育った少年・うずまきナルトが、
+                                    「火影（里のリーダー）」になる夢を追いながら仲間と成長していく物語。</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -406,15 +422,19 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/都市伝説探偵.webp" class="card-img-top" alt="都市伝説">
+                            <img src="images/jujutu.jpg" class="card-img-top" alt="都市伝説">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
                                     <span class="badge bg-dark">ホラー</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">都市伝説探偵</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">呪術廻戦</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    現代の学園で囁かれる“都市伝説”が次々と現実化。謎を追う探偵部の生徒たちが、恐怖と真相に迫っていく。怪異と推理が交錯する学園ホラーミステリー。</p>
+                                    人の負の感情から生まれる呪いが蔓延する世界。
+                                    普通の高校生・虎杖悠仁が呪いの王を宿し、
+                                    呪術師として過酷な運命を背負う。
+                                    死・正しさ・救いとは何かを突きつけてくる、
+                                    明るくないけど目を逸らせない作品。</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -432,15 +452,17 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/近未来探偵ネオ.webp" class="card-img-top" alt="未来探偵">
+                            <img src="images/hiroaka.jpg" class="card-img-top" alt="未来探偵">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-info">SF</span>
+                                    <span class="badge bg-info">バトル</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">未来探偵ネオ</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">僕のヒーローアカデミア</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    近未来都市を舞台に、若き探偵ネオが最新テクノロジーと鋭い推理力で複雑な事件に挑む。陰謀が渦巻く世界で真実を追い続ける、スタイリッシュなSFミステリーアクション。</p>
+                                    個性（超能力）が当たり前の世界。
+                                    無個性だった少年・緑谷出久が、
+                                    最高のヒーローを目指して成長する。</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -458,15 +480,18 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/音楽少女のメロディ.webp" class="card-img-top" alt="音楽少女">
+                            <img src="images/hannta-.jpg" class="card-img-top" alt="音楽少女">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-danger">恋愛</span>
+                                    <span class="badge bg-danger">バトル</span>
                                     <span class="badge bg-secondary">完結</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">音楽少女のメロディ</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">HUNTER×HUNTER</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    音楽に情熱を注ぐ少女たちが、友情や恋、夢に揺れながら成長していく姿を描く。笑顔と涙、感動が溢れる青春音楽ストーリー。
+                                    少年・ゴンが父を探すため、
+                                    超難関資格「ハンター」を目指す冒険物語。
+                                    能力バトル、心理戦、倫理観の揺さぶりがえぐい。
+                                    明るい絵柄に反して内容はかなり重く深い。
 
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -486,15 +511,18 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/料理バトル王.webp" class="card-img-top" alt="料理バトル">
+                            <img src="images/toriko.jpg" class="card-img-top" alt="料理バトル">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
                                     <span class="badge" style="background-color: #f97316;">グルメ</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">料理バトル王</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">トリコ</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    情熱と技をぶつけ、究極の一皿を目指す少年たちの熱血料理バトル。友情やライバルとの絆を胸に、最強の料理人への道を駆け抜けるグルメアクション。</p>
+                                    「食」がすべてを左右する世界。
+                                    まだ誰も味わったことのない
+                                    究極の食材を求めて、
+                                    凄腕の**美食屋**たちが冒険する。</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -510,10 +538,11 @@
                         </div>
                     </div>
                 </div>
-                <!-- 準備中 -->
-                <div id="contentPreparing" class="mb-4 d-none">
+            <div id="contentPreparing" class="mb-4 d-none">
                     <h4 id="preparingMessage" class="text-center py-5"></h4>
                 </div>
+                
+             </div>
 
                 <!-- ページネーション -->
                 <nav aria-label="ページネーション" id="pagination">
@@ -541,6 +570,7 @@
         </div>
     </div>
 
+
     <!-- フッター -->
     <footer class="py-4">
         <div class="container">
@@ -553,15 +583,15 @@
                     <h6 class="fw-bold mb-3">サイト情報</h6>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light text-decoration-none">About</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">利用規約</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">プライバシー</a></li>
+                        <li><a href="kiyaku.html" class="text-light text-decoration-none">利用規約</a></li>
+                        <li><a href="puraibasi-.html" class="text-light text-decoration-none">プライバシー</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="fw-bold mb-3">サポート</h6>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light text-decoration-none">ヘルプ</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">お問い合わせ</a></li>
+                        <li><a href="otoiawase.html" class="text-light text-decoration-none">お問い合わせ</a></li>
                         <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
                     </ul>
                 </div>

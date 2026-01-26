@@ -169,7 +169,8 @@
                     <!-- 利用規約 -->
                     <div class="mb-3">
                         <input type="checkbox" id="agreeTerms" required>
-                        <label for="agreeTerms">利用規約に同意します</label>
+                        <a href="kiyaku.html">利用規約</a>
+                        <label for="agreeTerms">に同意します</label>
                         <small class="text-danger d-none" id="termsError">利用規約に同意してください</small>
                     </div>
 
@@ -360,6 +361,21 @@
                 }
             });
         });
+        document.addEventListener('DOMContentLoaded', function () {
+
+    const agreeTerms = document.getElementById('agreeTerms');
+
+    
+    const params = new URLSearchParams(window.location.search);
+
+    if (params.get('agreed') === 'true') {
+        agreeTerms.checked = true;
+
+        
+        agreeTerms.dispatchEvent(new Event('change'));
+    }
+
+});
     </script>
 </body>
 

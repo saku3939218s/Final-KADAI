@@ -264,8 +264,8 @@
 
 <body>
     <!-- ナビゲーションバー -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark col-12 sticky-top">
+        <div class="container sticky-top">
             <a class="navbar-brand fw-bold" href="index.html">
                 <i class="bi bi-film"></i> AniListo
             </a>
@@ -313,25 +313,25 @@
         <!-- タブナビゲーション -->
         <ul class="nav nav-pills nav-fill mb-4" id="rankingTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link tab-btn m-1 active" id="overall-tab" data-bs-toggle="pill" data-bs-target="#overall"
+                <button class="nav-link tab-btn  active align-items-center border p-2"id="overall-tab" data-bs-toggle="pill" data-bs-target="#overall"
                     type="button" role="tab">
                     <i class="bi bi-star-fill"></i> 総合<span class="d-none d-lg-inline">ランキング</span>
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link tab-btn" id="weekly-tab" data-bs-toggle="pill" data-bs-target="#weekly"
+                <button class="nav-link tab-btn align-items-center border p-2" id="weekly-tab" data-bs-toggle="pill" data-bs-target="#weekly"
                     type="button" role="tab">
                     <i class="bi bi-calendar-week"></i> 週間<span class="d-none d-lg-inline">ランキング</span>
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link tab-btn" id="monthly-tab" data-bs-toggle="pill" data-bs-target="#monthly"
+                <button class="nav-link tab-btn align-items-center border p-2" id="monthly-tab" data-bs-toggle="pill" data-bs-target="#monthly"
                     type="button" role="tab">
                     <i class="bi bi-calendar-month"></i> 月間<span class="d-none d-lg-inline">ランキング</span>
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link tab-btn" id="seasonal-tab" data-bs-toggle="pill" data-bs-target="#seasonal"
+                <button class="nav-link tab-btn align-items-center border p-2" id="seasonal-tab" data-bs-toggle="pill" data-bs-target="#seasonal"
                     type="button" role="tab">
                     <i class="bi bi-calendar3"></i> 今期<spna class="d-none d-lg-inline">ランキング</spna>
                 </button>
@@ -351,15 +351,15 @@
                                 <i class="bi bi-trophy-fill position-absolute d-none d-md-block"
                                     style="top: -10px; right: -10px; font-size: 1.5rem;"></i>
                             </div>
-                            <img src="images/最強魔法使いの転生.webp" class="anime-thumbnail" alt="1位">
+                            <img src="images/toriko.jpg" class="anime-thumbnail" alt="1位">
                             <div class="ranking-info">
                                 <div class="d-flex gap-2 mb-2 flex-wrap">
-                                    <span class="badge bg-primary">ファンタジー</span>
+                                    <span class="badge bg-primary">グルメ</span>
                                     <span class="badge bg-success">放送中</span>
                                     <span class="badge bg-warning text-dark">人気急上昇</span>
                                 </div>
-                                <h4 class="ranknig-title">最強魔法使いの転生</h4>
-                                <p class="ranking-description">史上最強の魔法使いが転生して無双する王道ファンタジー</p>
+                                <h4 class="ranknig-title">トリコ</h4>
+                                <p class="ranking-description">究極の食を求め、仲間と生きる喜びを味わう冒険譚。</p>
                                 <div class="ranking-meta">
                                     <div class="rating-stars">
                                         <i class="bi bi-star-fill"></i>
@@ -387,14 +387,14 @@
                     <div class="card-body">
                         <div class="ranking-content">
                             <div class="rank-badge rank-2">2</div>
-                            <img src="images/竜騎士の伝説.webp" class="anime-thumbnail" alt="2位">
+                            <img src="images/ginntama.jpg" class="anime-thumbnail" alt="2位">
                             <div class="ranking-info">
                                 <div class="d-flex gap-2 mb-2 flex-wrap">
-                                    <span class="badge bg-primary">ファンタジー</span>
+                                    <span class="badge bg-primary">SF</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h4 class="ranking-title">竜騎士の伝説</h4>
-                                <p class="ranking-description">竜と契約した騎士の壮大な冒険譚</p>
+                                <h4 class="ranking-title">銀魂</h4>
+                                <p class="ranking-description">ふざけた日常の中で、侍たちが譲れないものを守り抜く話。</p>
                                 <div class="ranking-meta">
                                     <div class="rating-stars">
                                         <i class="bi bi-star-fill"></i>
@@ -422,14 +422,14 @@
                     <div class="card-body">
                         <div class="ranking-content">
                             <div class="rank-badge rank-3">3</div>
-                            <img src="images/魔法学園の日常.webp" class="anime-thumbnail" alt="3位">
+                            <img src="images/hiroaka.jpg" class="anime-thumbnail" alt="3位">
                             <div class="ranking-info">
                                 <div class="d-flex gap-2 mb-2 flex-wrap">
-                                    <span class="badge bg-primary">ファンタジー</span>
+                                    <span class="badge bg-primary">バトル</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h4 class="ranking-title">魔法学園の日常</h4>
-                                <p class="ranking-description">魔法学園での青春ファンタジーコメディ</p>
+                                <h4 class="ranking-title">僕のヒーローアカデミア</h4>
+                                <p class="ranking-description">無個性の少年が、受け継いだ力で「ヒーローとは何か」を問う物語。</p>
                                 <div class="ranking-meta">
                                     <div class="rating-stars">
                                         <i class="bi bi-star-fill"></i>
@@ -457,14 +457,14 @@
                     <div class="card-body">
                         <div class="ranking-content">
                             <div class="rank-badge rank-other">4</div>
-                            <img src="images/桜色の約束.webp" class="anime-thumbnail" alt="4位">
+                            <img src="images/yumebatoru.jpg" class="anime-thumbnail" alt="4位">
                             <div class="ranking-info">
                                 <div class="d-flex gap-2 mb-2 flex-wrap">
                                     <span class="badge bg-danger">恋愛</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h4 class="ranking-title">桜色の約束</h4>
-                                <p class="ranking-description">高校最後の春、幼馴染との約束を胸に青春を駆け抜ける</p>
+                                <h4 class="ranking-title">チェンソーマン</h4>
+                                <p class="ranking-description">最低限の幸せを求める少年が、欲望のまま生きて壊れていく話。</p>
                                 <div class="ranking-meta">
                                     <div class="rating-stars">
                                         <i class="bi bi-star-fill"></i>
@@ -491,14 +491,14 @@
                     <div class="card-body">
                         <div class="ranking-content">
                             <div class="rank-badge rank-other">5</div>
-                            <img src="images/量子戦士クロノス.webp" class="anime-thumbnail" alt="5位">
+                            <img src="images/suketto.jpg" class="anime-thumbnail" alt="5位">
                             <div class="ranking-info">
                                 <div class="d-flex gap-2 mb-2 flex-wrap">
-                                    <span class="badge bg-info">SF</span>
+                                    <span class="badge bg-info">学園</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h4 class="ranking-title">量子戦士クロノス</h4>
-                                <p class="ranking-description">時空を超えた戦いに巻き込まれた少年の壮大なSFアクション</p>
+                                <h4 class="ranking-title">SKET DANCE</h4>
+                                <p class="ranking-description">学園の何でも屋が、笑いと本音で誰かの悩みを救う物語。</p>
                                 <div class="ranking-meta">
                                     <div class="rating-stars">
                                         <i class="bi bi-star-fill"></i>
@@ -525,14 +525,14 @@
                     <div class="card-body">
                         <div class="ranking-content">
                             <div class="rank-badge rank-other">6</div>
-                            <img src="images/近未来探偵ネオ.webp" class="anime-thumbnail" alt="6位">
+                            <img src="images/NARUTO.jpg" class="anime-thumbnail" alt="6位">
                             <div class="ranking-info">
                                 <div class="d-flex gap-2 mb-2 flex-wrap">
-                                    <span class="badge bg-info">SF</span>
+                                    <span class="badge bg-info">忍者</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h4 class="ranking-title">未来探偵ネオ</h4>
-                                <p class="ranking-description">近未来を舞台に、AIと人間が協力して事件を解決するSFミステリー</p>
+                                <h4 class="ranking-title">NARUTO</h4>
+                                <p class="ranking-description">孤独な落ちこぼれ忍者が、仲間に認められ火影を目指す成長譚。</p>
                                 <div class="ranking-meta">
                                     <div class="rating-stars">
                                         <i class="bi bi-star-fill"></i>
@@ -559,14 +559,14 @@
                     <div class="card-body">
                         <div class="ranking-content">
                             <div class="rank-badge rank-other">7</div>
-                            <img src="images/都市伝説探偵.webp" class="anime-thumbnail" alt="7位">
+                            <img src="images/jujutu.jpg" class="anime-thumbnail" alt="7位">
                             <div class="ranking-info">
                                 <div class="d-flex gap-2 mb-2 flex-wrap">
                                     <span class="badge bg-dark">ホラー</span>
                                     <span class="badge bg-success">放送中</span>
                                 </div>
-                                <h4 class="ranking-title">都市伝説探偵</h4>
-                                <p class="ranking-description">現代に蘇る都市伝説の謎を解き明かす学園ホラーミステリー</p>
+                                <h4 class="ranking-title">呪術廻戦</h4>
+                                <p class="ranking-description">死と呪いに満ちた世界で、少年が「正しく生きる」ことを選び続ける話。</p>
                                 <div class="ranking-meta">
                                     <div class="rating-stars">
                                         <i class="bi bi-star-fill"></i>
@@ -644,15 +644,15 @@
                     <h6 class="fw-bold mb-3">サイト情報</h6>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light text-decoration-none">About</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">利用規約</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">プライバシー</a></li>
+                        <li><a href="kiyaku.html" class="text-light text-decoration-none">利用規約</a></li>
+                        <li><a href="puraibasi-.html" class="text-light text-decoration-none">プライバシー</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="fw-bold mb-3">サポート</h6>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light text-decoration-none">ヘルプ</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">お問い合わせ</a></li>
+                        <li><a href="otoiawase.html" class="text-light text-decoration-none">お問い合わせ</a></li>
                         <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
                     </ul>
                 </div>

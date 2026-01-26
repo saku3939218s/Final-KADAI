@@ -98,8 +98,8 @@
 
 <body>
     <!-- ナビゲーションバー -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark col-12 sticky-top">
+        <div class="container sticky-top">
             <a class="navbar-brand fw-bold" href="index.html">
                 <i class="bi bi-film"></i> AniListo
             </a>
@@ -187,7 +187,7 @@
         <!-- タブナビゲーション -->
         <ul class="nav nav-pills nav-fill mb-4" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="watching-tab" data-bs-toggle="pill" data-bs-target="#watching"
+                <button class="nav-link active align-items-center border p-2" id="watching-tab" data-bs-toggle="pill" data-bs-target="#watching"
                     type="button" role="tab">
                     <i class="bi bi-play-circle"></i>
                     <span class="d-none d-sm-inline">視聴中 (12)</span>
@@ -195,7 +195,7 @@
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="completed-tab" data-bs-toggle="pill" data-bs-target="#completed"
+                <button class="nav-link align-items-center border p-2" id="completed-tab" data-bs-toggle="pill" data-bs-target="#completed"
                     type="button" role="tab">
                     <i class="bi bi-check-circle"></i>
                     <span class="d-none d-sm-inline">視聴済み (45)</span>
@@ -203,7 +203,7 @@
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="plantowatch-tab" data-bs-toggle="pill" data-bs-target="#plantowatch"
+                <button class="nav-link align-items-center border p-2" id="plantowatch-tab" data-bs-toggle="pill" data-bs-target="#plantowatch"
                     type="button" role="tab">
                     <i class="bi bi-clock"></i>
                     <span class="d-none d-sm-inline">視聴予定 (23)</span>
@@ -211,7 +211,7 @@
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="dropped-tab" data-bs-toggle="pill" data-bs-target="#dropped" type="button"
+                <button class="nav-link align-items-center border p-2" id="dropped-tab" data-bs-toggle="pill" data-bs-target="#dropped" type="button"
                     role="tab">
                     <i class="bi bi-x-circle"></i>
                     <span class="d-none d-sm-inline">視聴中断 (8)</span>
@@ -244,12 +244,12 @@
                                 <tbody>
                                     <tr class="anime-table-card">
                                         <td>
-                                            <img src="images/異世界の勇者 ～運命の旅路～.webp" class="anime-thumbnail" alt="異世界の勇者">
+                                            <img src="images/images.jpg" class="anime-thumbnail" alt="異世界の勇者">
                                         </td>
                                         <td>
-                                            <h6 class="mb-1 fw-bold text-clamp-2">異世界の勇者 ～運命の旅路～</h6>
+                                            <h6 class="mb-1 fw-bold text-clamp-2">DRAGON BALL</h6>
                                             <div>
-                                                <span class="badge bg-primary status-badge">ファンタジー</span>
+                                                <span class="badge bg-primary status-badge">バトル</span>
                                                 <span class="badge bg-success status-badge">放送中</span>
                                             </div>
                                         </td>
@@ -265,7 +265,7 @@
                                         </td>
                                         <td>
                                             <div class="mb-1">
-                                                <small class="text-muted">8話 / 24話</small>
+                                                <small class="text-muted">66話 / 200話</small>
                                             </div>
                                             <div class="progress progress-custom">
                                                 <div class="progress-bar bg-primary" style="width: 33%">33%</div>
@@ -285,10 +285,10 @@
                                     </tr>
                                     <tr class="anime-table-card">
                                         <td>
-                                            <img src="images/桜色の約束.webp" class="anime-thumbnail" alt="桜色の約束">
+                                            <img src="images/yumebatoru.jpg" class="anime-thumbnail" alt="桜色の約束">
                                         </td>
                                         <td>
-                                            <h6 class="mb-1 fw-bold text-clamp-2">桜色の約束</h6>
+                                            <h6 class="mb-1 fw-bold text-clamp-2">チェンソーマン</h6>
                                             <div>
                                                 <span class="badge bg-danger status-badge">恋愛</span>
                                                 <span class="badge bg-success status-badge">放送中</span>
@@ -326,10 +326,10 @@
                                     </tr>
                                     <tr class="anime-table-card">
                                         <td>
-                                            <img src="images/量子戦士クロノス.webp" class="anime-thumbnail" alt="量子戦士">
+                                            <img src="images/ginntama.jpg" class="anime-thumbnail" alt="量子戦士">
                                         </td>
                                         <td>
-                                            <h6 class="mb-1 fw-bold text-clamp-2">量子戦士クロノス</h6>
+                                            <h6 class="mb-1 fw-bold text-clamp-2">銀魂</h6>
                                             <div>
                                                 <span class="badge bg-info status-badge">SF</span>
                                                 <span class="badge bg-success status-badge">放送中</span>
@@ -367,12 +367,12 @@
                                     </tr>
                                     <tr class="anime-table-card">
                                         <td>
-                                            <img src="images/魔法学園の日常.webp" class="anime-thumbnail" alt="魔法学園">
+                                            <img src="images/NARUTO.jpg" class="anime-thumbnail" alt="魔法学園">
                                         </td>
                                         <td>
-                                            <h6 class="mb-1 fw-bold text-clamp-2">魔法学園の日常</h6>
+                                            <h6 class="mb-1 fw-bold text-clamp-2">NARUTO</h6>
                                             <div>
-                                                <span class="badge bg-primary status-badge">ファンタジー</span>
+                                                <span class="badge bg-primary status-badge">忍者</span>
                                                 <span class="badge bg-success status-badge">放送中</span>
                                             </div>
                                         </td>
@@ -433,13 +433,13 @@
                                 <tbody>
                                     <tr class="anime-table-card">
                                         <td>
-                                            <img src="images/竜騎士の伝説.webp" class="anime-thumbnail" alt="竜騎士">
+                                            <img src="images/wannpi-su.jpg" class="anime-thumbnail" alt="竜騎士">
                                         </td>
                                         <td>
-                                            <h6 class="mb-1 fw-bold text-clamp-2">竜騎士の伝説</h6>
+                                            <h6 class="mb-1 fw-bold text-clamp-2">ONE PIECE</h6>
                                             <div>
                                                 <span class="badge bg-primary status-badge">ファンタジー</span>
-                                                <span class="badge bg-secondary status-badge">完結</span>
+                                                
                                             </div>
                                         </td>
                                         <td>
@@ -466,13 +466,13 @@
                                     </tr>
                                     <tr class="anime-table-card">
                                         <td>
-                                            <img src="images/近未来探偵ネオ.webp" class="anime-thumbnail" alt="未来探偵">
+                                            <img src="images/hiroaka.jpg" class="anime-thumbnail" alt="未来探偵">
                                         </td>
                                         <td>
-                                            <h6 class="mb-1 fw-bold text-clamp-2">未来探偵ネオ</h6>
+                                            <h6 class="mb-1 fw-bold text-clamp-2">僕のヒーローアカデミア</h6>
                                             <div>
-                                                <span class="badge bg-info status-badge">SF</span>
-                                                <span class="badge bg-secondary status-badge">完結</span>
+                                                <span class="badge bg-info status-badge">バトル</span>
+                                               
                                             </div>
                                         </td>
                                         <td>
@@ -499,10 +499,10 @@
                                     </tr>
                                     <tr class="anime-table-card">
                                         <td>
-                                            <img src="images/音楽少女のメロディ.webp" class="anime-thumbnail" alt="音楽少女">
+                                            <img src="images/suketto.jpg" class="anime-thumbnail" alt="音楽少女">
                                         </td>
                                         <td>
-                                            <h6 class="mb-1 fw-bold text-clamp-2">音楽少女のメロディ</h6>
+                                            <h6 class="mb-1 fw-bold text-clamp-2">SKET DANCE</h6>
                                             <div>
                                                 <span class="badge bg-danger status-badge">恋愛</span>
                                                 <span class="badge bg-secondary status-badge">完結</span>
@@ -558,10 +558,10 @@
                                 <tbody>
                                     <tr class="anime-table-card">
                                         <td>
-                                            <img src="images/都市伝説探偵.webp" class="anime-thumbnail" alt="都市伝説探偵">
+                                            <img src="images/jujutu.jpg" class="anime-thumbnail" alt="都市伝説探偵">
                                         </td>
                                         <td>
-                                            <h6 class="mb-1 fw-bold text-clamp-2">都市伝説探偵</h6>
+                                            <h6 class="mb-1 fw-bold text-clamp-2">呪術廻戦</h6>
                                             <div>
                                                 <span class="badge bg-dark status-badge">ホラー</span>
                                                 <span class="badge bg-success status-badge">放送中</span>
@@ -591,10 +591,10 @@
                                     </tr>
                                     <tr class="anime-table-card">
                                         <td>
-                                            <img src="images/料理バトル王.webp" class="anime-thumbnail" alt="料理バトル王">
+                                            <img src="images/toriko.jpg" class="anime-thumbnail" alt="料理バトル王">
                                         </td>
                                         <td>
-                                            <h6 class="mb-1 fw-bold text-clamp-2">料理バトル王</h6>
+                                            <h6 class="mb-1 fw-bold text-clamp-2">トリコ</h6>
                                             <div>
                                                 <span class="badge status-badge"
                                                     style="background-color: #f97316;">グルメ</span>
@@ -651,12 +651,12 @@
                                 <tbody>
                                     <tr class="anime-table-card">
                                         <td>
-                                            <img src="images/ロボット大戦記.webp" class="anime-thumbnail" alt="作品1">
+                                            <img src="images/hannta-.jpg" class="anime-thumbnail" alt="作品1">
                                         </td>
                                         <td>
-                                            <h6 class="mb-1 fw-bold text-clamp-2">ロボット大戦記</h6>
+                                            <h6 class="mb-1 fw-bold text-clamp-2">HUNTER×HUNTER</h6>
                                             <div>
-                                                <span class="badge bg-info status-badge">SF</span>
+                                                <span class="badge bg-info status-badge">バトル</span>
                                                 <span class="badge bg-secondary status-badge">完結</span>
                                             </div>
                                         </td>
@@ -677,10 +677,10 @@
                                     </tr>
                                     <tr class="anime-table-card">
                                         <td>
-                                            <img src="images/学園コメディ.webp" class="anime-thumbnail" alt="作品2">
+                                            <img src="images/ji-sann.jpg" class="anime-thumbnail" alt="作品2">
                                         </td>
                                         <td>
-                                            <h6 class="mb-1 fw-bold text-clamp-2">学園コメディ!</h6>
+                                            <h6 class="mb-1 fw-bold text-clamp-2">絶体絶命でんじゃらすじーさん</h6>
                                             <div>
                                                 <span class="badge" style="background-color: #fbbf24;">コメディ</span>
                                                 <span class="badge bg-secondary status-badge">完結</span>
@@ -832,15 +832,15 @@
                     <h6 class="fw-bold mb-3">サイト情報</h6>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light text-decoration-none">About</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">利用規約</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">プライバシー</a></li>
+                        <li><a href="kiyaku.html" class="text-light text-decoration-none">利用規約</a></li>
+                        <li><a href="puraibasi-.html" class="text-light text-decoration-none">プライバシー</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="fw-bold mb-3">サポート</h6>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light text-decoration-none">ヘルプ</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">お問い合わせ</a></li>
+                        <li><a href="otoiawase.html" class="text-light text-decoration-none">お問い合わせ</a></li>
                         <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
                     </ul>
                 </div>

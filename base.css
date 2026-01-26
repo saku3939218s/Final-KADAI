@@ -9,15 +9,67 @@
 .navbar {
   background-color: #1c2432;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  
 }
+
 
 .hero-section,
 .page-heading {
   background: linear-gradient(180deg, #1d2734 0%, #404a5d 100%);
-  color: #ffffff;
+  color: white;
+   
   padding: 80px 0;
   margin-bottom: 40px;
 }
+hero1{
+  background-color: #fbbf24;
+}
+.hero-section {
+  min-height: 100svh;   
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+     background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: scroll; 
+  animation: image_anime 20s ease infinite;
+}
+@keyframes image_anime {
+     0%{
+        background-image:url(images/NARUTO.jpg);
+        background-size:cover;
+          background-attachment: fixed;
+    }
+       25%{
+        background-image:url(images/jujutu.jpg);
+        background-size:cover;
+          background-attachment: fixed;
+    }
+    50%{
+        background-image:url(images/hannta-2.jpg);
+        background-size:cover;
+          background-attachment: fixed;
+    }
+       75%{
+        background-image:url(images/suketto2.jpg);
+        background-size:cover;
+          background-attachment: fixed;
+    }
+     100%{
+        background-image:url(images/toriko.jpg);
+        background-size:cover;
+          background-attachment: fixed;
+    }
+    
+     
+
+}
+
 
 .page-heading {
   padding: 60px 0 40px 0;

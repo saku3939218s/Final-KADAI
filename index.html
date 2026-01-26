@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="base.css">
     <link rel="icon" href="favicon.png">
     <style>
+        .hero-section{
+             -webkit-text-stroke: 1px black;
+  text-stroke: 1px black;
+        }
         .anime-card img {
             width: 100%;
             height: 30vw;
@@ -55,8 +59,8 @@
 
 <body>
     <!-- ナビゲーションバー -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark col-12 sticky-top">
+        <div class="container sticky-top">
             <a class="navbar-brand fw-bold" href="#">
                 <i class="bi bi-film"></i> AniListo
             </a>
@@ -93,7 +97,11 @@
     <!-- ヒーローセクション -->
     <div class="hero-section">
         <div class="container text-center">
-            <h1 class="display-3 fw-bold mb-4">あなたの好きなアニメを見つけよう</h1>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active hero1">
+      
+      <h1 class="display-3 fw-bold mb-4">あなたの好きなアニメを見つけよう</h1>
             <p class="lead mb-4">10,000以上の作品から、お気に入りのアニメを探そう</p>
             <div class="row justify-content-center">
                 <div class="col-md-6">
@@ -102,9 +110,15 @@
                         <button class="btn btn-light" type="button">
                             <i class="bi bi-search"></i> 検索
                         </button>
+                        
                     </div>
                 </div>
             </div>
+    </div>
+  </div>
+ 
+</div>
+            
         </div>
     </div>
 
@@ -121,12 +135,14 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card anime-card position-relative">
-                        <img src="images/異世界の勇者 ～運命の旅路～.webp" class="card-img-top img-fluid" alt="異世界の勇者">
+                        <img src="images/images.jpg" class="card-img-top img-fluid" alt="異世界の勇者">
                         <div class="card-body">
-                            <span class="badge bg-primary mb-2">ファンタジー</span>
+                            <span class="badge bg-primary mb-2">バトル</span>
                             <span class="badge bg-success mb-2">放送中</span>
-                            <h5 class="card-title fw-bold card-title-nowrap">異世界の勇者 ～運命の旅路～</h5>
-                            <p class="card-text text-muted text-clamp-3">異世界に勇者として召喚された高校生・佐藤翔太が、仲間との絆を力に魔王軍や陰謀へ挑む。成長と感動が交錯する、胸躍る王道ファンタジー冒険譚。</p>
+                            <h5 class="card-title fw-bold card-title-nowrap">DRAGON BALL</h5>
+                            <p class="card-text text-muted text-clamp-3">山奥で暮らす少年・孫悟空は、不思議な力を持つドラゴンボールを探す少女ブルマと出会う。
+仲間やライバルたちと冒険や修行を重ね、次々と現れる強敵に立ち向かっていく。
+戦いの中で悟空は限界を超えて成長し、地球や宇宙を救う存在となっていく。</p>
                             <a href="anime-detail.html" class="stretched-link"></a>
                             <div class="d-flex flex-column flex-sm-row flex-md-column flex-lg-row justify-content-between align-items-start align-items-sm-center align-items-md-start align-items-lg-center">
                                 <div class="rating-stars mb-2 mb-sm-0 mb-md-2 mb-lg-0">
@@ -145,12 +161,14 @@
 
                 <div class="col-md-4">
                     <div class="card anime-card">
-                        <img src="images/桜色の約束.webp" class="card-img-top" alt="青春ストーリー">
+                        <img src="images/jujutu.jpg" class="card-img-top" alt="青春ストーリー">
                         <div class="card-body">
-                            <span class="badge bg-danger mb-2">恋愛</span>
+                            <span class="badge bg-danger mb-2">バトル</span>
                             <span class="badge bg-success mb-2">放送中</span>
-                            <h5 class="card-title fw-bold card-title-nowrap">桜色の約束</h5>
-                            <p class="card-text text-muted text-clamp-3">高校最後の春、幼馴染との大切な“約束”を胸に揺れる想いと向き合う主人公。夢と現実の狭間で迷いながらも、確かな絆が未来を照らす感動の青春ラブストーリー。</p>
+                            <h5 class="card-title fw-bold card-title-nowrap">呪術廻戦</h5>
+                            <p class="card-text text-muted text-clamp-3">人の負の感情から生まれる呪いが蔓延する世界。
+                                普通の高校生・虎杖悠仁が呪いの王を宿し、
+                                呪術師として過酷な運命を背負う。</p>
                             <div class="d-flex flex-column flex-sm-row flex-md-column flex-lg-row justify-content-between align-items-start align-items-sm-center align-items-md-start align-items-lg-center">
                                 <div class="rating-stars mb-2 mb-sm-0 mb-md-2 mb-lg-0">
                                     <i class="bi bi-star-fill"></i>
@@ -168,12 +186,15 @@
 
                 <div class="col-md-4">
                     <div class="card anime-card">
-                        <img src="images/量子戦士クロノス.webp" class="card-img-top" alt="SFアクション">
+                        <img src="images/suketto.jpg" class="card-img-top" alt="SFアクション">
                         <div class="card-body">
-                            <span class="badge bg-info mb-2">SF</span>
+                            <span class="badge bg-info mb-2">学園</span>
                             <span class="badge bg-success mb-2">放送中</span>
-                            <h5 class="card-title fw-bold card-title-nowrap">量子戦士クロノス</h5>
-                            <p class="card-text text-muted text-clamp-3">時空のゆがみに巻き込まれた少年が“量子戦士”として覚醒。過去と未来を駆け巡り、崩壊する世界を救うため仲間と共に戦い抜く、スケール壮大なSFアクション。</p>
+                            <h5 class="card-title fw-bold card-title-nowrap">SKET DANCE</h5>
+                            <p class="card-text text-muted text-clamp-3">学園の「何でも屋」部活・スケット団の話。
+                            困ってる生徒を全力で助ける…が、
+                            基本はギャグ、たまに泣かせに来る。
+                            笑わせて油断させてから感情を殴ってくる名作。</p>
                             <div class="d-flex flex-column flex-sm-row flex-md-column flex-lg-row justify-content-between align-items-start align-items-sm-center align-items-md-start align-items-lg-center">
                                 <div class="rating-stars mb-2 mb-sm-0 mb-md-2 mb-lg-0">
                                     <i class="bi bi-star-fill"></i>
@@ -234,12 +255,14 @@
                                                 <div class="ranking-number">1</div>
                                             </div>
                                             <div class="col-3">
-                                                <img src="images/最強魔法使いの転生.webp" class="img-fluid rounded" alt="1位">
+                                                <img src="images/NARUTO.jpg" class="img-fluid rounded" alt="1位">
                                             </div>
                                             <div class="col-7">
                                                 <span class="badge bg-warning text-dark mb-2">1位</span>
-                                                <h5 class="fw-bold mb-2 card-title-nowrap">最強魔法使いの転生</h5>
-                                                <p class="text-muted small mb-2 text-clamp-2">史上最強の魔法使いが未来へ転生。失われた魔法文明を前に、新たな仲間と共に世界の謎と陰謀へ挑む、爽快で壮大な転生ファンタジーアクション。</p>
+                                                <h5 class="fw-bold mb-2 card-title-nowrap">NARUTO</h5>
+                                                <p class="text-muted small mb-2 text-clamp-2">忍者の世界。
+                                                里から忌み嫌われて育った少年・うずまきナルトが、
+                                                「火影（里のリーダー）」になる夢を追いながら仲間と成長していく物語。</p>
                                                 <div class="rating-stars small">
                                                     <i class="bi bi-star-fill"></i>
                                                     <i class="bi bi-star-fill"></i>
@@ -263,12 +286,14 @@
                                                 <div class="ranking-number">2</div>
                                             </div>
                                             <div class="col-3">
-                                                <img src="images/竜騎士の伝説.webp" class="img-fluid rounded" alt="2位">
+                                                <img src="images/hiroaka.jpg" class="img-fluid rounded" alt="2位">
                                             </div>
                                             <div class="col-7">
                                                 <span class="badge bg-secondary mb-2">2位</span>
-                                                <h5 class="fw-bold mb-2 card-title-nowrap">竜騎士の伝説</h5>
-                                                <p class="text-muted small mb-2 text-clamp-2">竜と契約した若き騎士が、仲間と共に迫りくる脅威と古代の謎に立ち向かう。絆と勇気が導く、壮大な冒険と伝説が紡がれるファンタジー物語。</p>
+                                                <h5 class="fw-bold mb-2 card-title-nowrap">僕のヒーローアカデミア</h5>
+                                                <p class="text-muted small mb-2 text-clamp-2">個性（超能力）が当たり前の世界    。
+                                                無個性だった少年・緑谷出久が、
+                                                最高のヒーローを目指して成長する。</p>
                                                 <div class="rating-stars small">
                                                     <i class="bi bi-star-fill"></i>
                                                     <i class="bi bi-star-fill"></i>
@@ -292,12 +317,16 @@
                                                 <div class="ranking-number">3</div>
                                             </div>
                                             <div class="col-3">
-                                                <img src="images/魔法学園の日常.webp" class="img-fluid rounded" alt="3位">
+                                                <img src="images/ginntama.jpg" class="img-fluid rounded" alt="3位">
                                             </div>
                                             <div class="col-7">
                                                 <span class="badge bg-secondary mb-2">3位</span>
-                                                <h5 class="fw-bold mb-2 card-title-nowrap">魔法学園の日常</h5>
-                                                <p class="text-muted small mb-2 text-clamp-2">魔法学園に通う個性豊かな生徒たちが、授業や試験、友情や恋に揺れながら日々成長していく。笑いとときめきがあふれる、魔法世界の青春ファンタジー。</p>
+                                                <h5 class="fw-bold mb-2 card-title-nowrap">銀魂</h5>
+                                                <p class="text-muted small mb-2 text-clamp-2">江戸×宇宙人というカオスな世界。
+                                                ダメ人間だけど頼れる男・坂田銀時と仲間たちの日常。
+                                                下ネタ・パロディ・ギャグ全開なのに、
+                                                急にシリアスで心をえぐってくる。
+                                                「侍とは何か」「守るものとは何か」が芯にある。</p>
                                                 <div class="rating-stars small">
                                                     <i class="bi bi-star-fill"></i>
                                                     <i class="bi bi-star-fill"></i>
@@ -321,12 +350,14 @@
                                                 <div class="ranking-number">4</div>
                                             </div>
                                             <div class="col-3">
-                                                <img src="images/近未来探偵ネオ.webp" class="img-fluid rounded" alt="4位">
+                                                <img src="images/buri.jpg" class="img-fluid rounded" alt="4位">
                                             </div>
                                             <div class="col-7">
                                                 <span class="badge bg-secondary mb-2">4位</span>
-                                                <h5 class="fw-bold mb-2 card-title-nowrap">未来探偵ネオ</h5>
-                                                <p class="text-muted small mb-2 text-clamp-2">近未来都市を舞台に、若き探偵ネオが最新テクノロジーと鋭い推理力で複雑な事件に挑む。陰謀が渦巻く世界で真実を追い続ける、スタイリッシュなSFミステリーアクション。</p>
+                                                <h5 class="fw-bold mb-2 card-title-nowrap">BLEACH</h5>
+                                                <p class="text-muted small mb-2 text-clamp-2">死神が存在する世界。
+                                                霊が見える高校生・黒崎一護が死神の力を得て、
+                                                人間界と霊界を守る戦いに巻き込まれていく。</p>
                                                 <div class="rating-stars small">
                                                     <i class="bi bi-star-fill"></i>
                                                     <i class="bi bi-star-fill"></i>
@@ -427,15 +458,15 @@
                     <h6 class="fw-bold mb-3">サイト情報</h6>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light text-decoration-none">About</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">利用規約</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">プライバシー</a></li>
+                        <li><a href="kiyaku.html" class="text-light text-decoration-none">利用規約</a></li>
+                        <li><a href="puraibasi-.html" class="text-light text-decoration-none">プライバシー</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="fw-bold mb-3">サポート</h6>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-light text-decoration-none">ヘルプ</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">お問い合わせ</a></li>
+                        <li><a href="otoiawase.html" class="text-light text-decoration-none">お問い合わせ</a></li>
                         <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
                     </ul>
                 </div>
