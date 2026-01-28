@@ -88,39 +88,64 @@
                         <a class="nav-link d-lg-none" href="anime-login.html">ログイン</a>
                     </li>
                 </ul>
+                <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search">
+    <input class="form-control me-2" type="search" placeholder="アニメ検索" aria-label="Search">
+    <button class="btn btn-outline-light" type="submit">
+        <i class="bi bi-search"></i>
+    </button>
+</form>
                 <a href="anime-login.html" class="btn btn-light ms-3 d-none d-lg-block">
                     <i class="bi bi-person-circle"></i> ログイン</a>
             </div>
         </div>
     </nav>
 
-    <!-- ヒーローセクション -->
+    
     <div class="hero-section">
-        <div class="container text-center">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active hero1">
-      
-      <h1 class="display-3 fw-bold mb-4">あなたの好きなアニメを見つけよう</h1>
-            <p class="lead mb-4">10,000以上の作品から、お気に入りのアニメを探そう</p>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <div class="input-group input-group-lg">
-                        <input type="text" class="form-control" placeholder="作品名で検索...">
-                        <button class="btn btn-light" type="button">
-                            <i class="bi bi-search"></i> 検索
-                        </button>
-                        
-                    </div>
-                </div>
-            </div>
+
+
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="images/NARUTO.jpg" class="d-block w-100 hero-img">
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/jujutu.jpg" class="d-block w-100 hero-img">
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/hannta-2.jpg" class="d-block w-100 hero-img">
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/suketto2.jpg" class="d-block w-100 hero-img">
+      </div>
+
     </div>
   </div>
- 
-</div>
-            
+
+  
+  <div class="hero-content text-center text-white container">
+    <h1 class="display-3 fw-bold mb-4">あなたの好きなアニメを見つけよう</h1>
+    <p class="lead mb-4">10,000以上の作品から、お気に入りのアニメを探そう</p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" placeholder="作品名で検索...">
+          <button class="btn btn-light">
+            <i class="bi bi-search"></i> 検索
+          </button>
         </div>
+      </div>
     </div>
+  </div>
+
+</div>
+
+    
 
     <div class="container">
         <!-- 今期の注目作品 -->

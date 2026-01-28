@@ -21,54 +21,39 @@
   padding: 80px 0;
   margin-bottom: 40px;
 }
-hero1{
-  background-color: #fbbf24;
-}
+
 .hero-section {
-  min-height: 100svh;   
+
+  position: relative;
+  height: calc(100svh - 72px);
+  overflow: hidden;
+}
+
+.hero-img {
+  padding-top:0%;
+  height: 100%;
     width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    align-items: center;
-    position: relative;
-     background-repeat: no-repeat; 
-    background-size: cover; 
-    background-attachment: scroll; 
-  animation: image_anime 20s ease infinite;
+  object-fit: cover;
 }
-@keyframes image_anime {
-     0%{
-        background-image:url(images/NARUTO.jpg);
-        background-size:cover;
-          background-attachment: fixed;
-    }
-       25%{
-        background-image:url(images/jujutu.jpg);
-        background-size:cover;
-          background-attachment: fixed;
-    }
-    50%{
-        background-image:url(images/hannta-2.jpg);
-        background-size:cover;
-          background-attachment: fixed;
-    }
-       75%{
-        background-image:url(images/suketto2.jpg);
-        background-size:cover;
-          background-attachment: fixed;
-    }
-     100%{
-        background-image:url(images/toriko.jpg);
-        background-size:cover;
-          background-attachment: fixed;
-    }
-    
-     
 
+.hero-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1;
+}
+
+
 body {
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -140,7 +125,12 @@ h6,
 .navbar-brand {
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
-
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 #backToTopBtn {
   position: fixed;
   bottom: 20px;
